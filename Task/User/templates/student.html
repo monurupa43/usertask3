@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+          crossorigin="anonymous">
+</head>
+<body>
+<h1>Student form</h1>
+<div class ="container">
+
+<form method="post" action="">
+    {% csrf_token %}
+    <div class="col-mid-5">
+        {{form.as_p}}
+    </div>
+    <div class ="col-mid-3">
+    <button class="btn btn-primary" type="submit">Submit</button>
+</div>
+</form>
+</div>
+</body>
+</html>
